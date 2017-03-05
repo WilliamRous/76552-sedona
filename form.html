@@ -3,10 +3,91 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-  </head>
-  <body>
+</head>
+<body>
+  <header class="page-header">
+    <nav class="header-menu">
+      <ul class="header-menu__list">
+        <li class="header-menu__item"><a href="#">Главная</a></li>
+        <li class="header-menu__item"><a href="#">Фото и видео</a></li>
+        <li class="header-menu__item"><a href="#">Форма отзыва</a></li>
+        <li class="header-menu__item"><a href="#">HTML Academy</a></li>
+      </ul>
+    </nav>
+    <div class="page-header__logo">
+      <img src="http://placehold.it/140x100" width="140" height="100" alt="Логотип Седоны">
+    </div>
+    <button class="page-header__toggle" type="button">Открыть меню</button>
+  </header>
 
+<main class="page-main">
+<header class="page-main-form__header">
+  <img src="http://placehold.it/350x150" width="350" height="150" alt="Добро пожаловать в Седону">
+  <h1 class="page-main-form__header-title">Оставьте свой отзыв</h1>
+  <p class="page-main-form__header-desc">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностями</p>
+</header>
+<form class="page-main-form" action="https://echo.htmlacademy.ru/" method="get">
+  <fieldset class="page-main-form__initials">
+    <legend class="page-main-form__initials-legend">Представьтесь:</legend>
+    <label for="page_main-form__initials-name" class="page_main-form__username-label">Имя<sup>*</sup></label>
+    <input type="text" id="page_main-form__initials-name" class="page_main-form__username-area" placeholder="">
+    <label for="page_main-form__initials-surname" class="page_main-form__username-label">Фамилия<sup>*</sup></label>
+    <input type="text" id="page_main-form__initials-surname" class="page_main-form__username-area" placeholder="">
+    <label for="page_main-form__initials-patronymic" class="page_main-form__username-label">Отчество<sup>*</sup></label>
+    <input type="text" id="page_main-form__initials-patronymic" class="page_main-form__username-area" placeholder="">
+  </fieldset>
 
+  <fieldset class="page-main-form__contacts">
+    <legend class="page-main-form__contacts-legend">Контактная информация:</legend>
+    <label for="page-main-form__contacts-tel" class="page-main-form__contacts-label">Контактный телефон<sup>*</sup></label>
+    <input type="tel" name="contants" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" id="page-main-form__contacts-tel" class="page-main-form__contacts-area">
+    <label for="page-main-form__contacts-mail" class="page-main-form__contacts-label">Электронная почта<sup>*</sup></label>
+    <input type="tel" name="contants" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" id="page-main-form__contacts-mail" class="page-main-form__contacts-area">
+  </fieldset>
 
-  </body>
+  <fieldset class="page-main-form__impression">
+    <legend class="page-main-form__impression-legend">Ваше общее впечатление:</legend>
+    <input type="radio" class="page-main-form__impression-radio" name="radio" id="page-main-form__impression-positive" checked>
+    <labeL for="page-main-form__impression-positive" class="page-main-form__impression-label">Скорее положительное</label>
+    <input type="radio" class="page-main-form__impression-radio" name="radio" id="page-main-form__impression-negative">
+    <labeL for="page-main-form__impression-negative" class="page-main-form__impression-label">Скорее отрицательное</label>
+    <input type="radio" class="page-main-form__impression-radio" name="radio" id="page-main-form__impression-noanswer">
+    <labeL for="page-main-form__impression-noanswer" class="page-main-form__impression-label">Затрудняюсь ответить</label>
+  </fieldset>
+
+  <fieldset class="page-main-form__attractions">
+    <legend class="page-main-form__attractions-legend">Посещенные достопримечательности:</legend>
+    <input type="checkbox" class="page-main-form__attractions-checkbox" id="page-main-form__attractions-bridge" checked>
+    <label for="page-main-form__attractions-bridge" class="page-main-form__attractions-label">Мост дьявола</label>
+    <input type="checkbox" class="page-main-form__attractions-checkbox" id="page-main-form__attractions-park" checked>
+    <label for="page-main-form__attractions-park" class="page-main-form__attractions-label">Слайд-парк</label>
+    <input type="checkbox" class="page-main-form__attractions-checkbox" id="page-main-form__attractions-bell" checked>
+    <label for="page-main-form__attractions-bell" class="page-main-form__attractions-label">Гора-колокол</label>
+    <input type="checkbox" class="page-main-form__attractions-checkbox" id="page-main-form__attractions-rocks" checked>
+    <label for="page-main-form__attractions-rocks" class="page-main-form__attractions-label">Красные скалы</label>
+  </fieldset>
+
+  <fieldset class="page-main-form__emotions">
+    <label for="page-main-form__emotions-area" class="page-main-form__emotions-label">Опишите свои эмоции</label>
+    <textarea id="page-main-form__emotions-area" class="page-main-form__emotions-textarea" placeholder="Опишите подробно все свои восторги"></textarea>
+  </fieldset>
+
+  <button type="submit" class="page-main-form-btn btn">Отправить отзыв</button>
+
+</form>
+</main>
+
+<footer class="page-footer">
+  <h2 class="page-footer-title">#Visitsedona</h2>
+  <div class="page-footer-social">
+    <a class="social-btn social-btn--twitter" href="#">Twitter</a>
+    <a class="social-btn social-btn--facebook" href="#">Facebook</a>
+    <a class="social-btn social-btn--youtube" href="#">Youtube</a>
+  </div>
+  <div class="page-footer__copyright">
+    <p class="page-footer__copyright-title">Разработано</p>
+    <img src="http://placehold.it/140x100" width="140" height="100" alt="Логотип Академии">
+  </div>
+</footer>
+</body>
 </html>

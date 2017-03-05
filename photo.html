@@ -3,10 +3,101 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-  </head>
-  <body>
+</head>
+<body>
+  <header class="page-header">
+    <nav class="header-menu">
+      <ul class="header-menu__list">
+        <li class="header-menu__item"><a href="#">Главная</a></li>
+        <li class="header-menu__item"><a href="#">Фото и видео</a></li>
+        <li class="header-menu__item"><a href="#">Форма отзыва</a></li>
+        <li class="header-menu__item"><a href="#">HTML Academy</a></li>
+      </ul>
+    </nav>
+    <div class="page-header__logo">
+      <img src="http://placehold.it/140x100" width="140" height="100" alt="Логотип Седоны">
+    </div>
+    <button class="page-header__toggle" type="button">Открыть меню</button>
+  </header>
 
+<main class="page-main">
 
+  <section class="page-main-gallery">
+    <header class="page-ain-gallery__header">
+      <img src="http://placehold.it/350x150" width="350" height="150" alt="Добро пожаловать в Седону">
+      <h1 class="page-ain-gallery__header-title">Фото и видео</h1>
+      <p class="page-ain-gallery__header-desc">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике</p>
+    </header>
 
-  </body>
+    <article class="page-main-photo">
+      <div class="page-main-photo__image">
+        <img src="http://placehold.it/350x150" width="350" height="150" alt="Народные проторы">
+      </div>
+      <blockquote class="page-main-photo__desc">
+        <p class="page-main-photo__desc-title">Народные просторы</p>
+        <cite class="page-main-photo__desc-autor">Авор фото: Борис</cite>
+        <p class="page-main-photo__desc-rate">1350</p>
+      </blockquote>
+    </article>
+
+    <article class="page-main-photo">
+      <div class="page-main-photo__image">
+        <img src="http://placehold.it/350x150" width="350" height="150" alt="Местная растительность">
+      </div>
+      <blockquote class="page-main-photo__desc">
+        <p class="page-main-photo__desc-title">Местная растительность</p>
+        <cite class="page-main-photo__desc-autor">Авор фото: Сергей</cite>
+        <p class="page-main-photo__desc-rate">143</p>
+      </blockquote>
+    </article>
+
+    <article class="page-main-photo">
+      <div class="page-main-photo__image">
+        <img src="http://placehold.it/350x150" width="350" height="150" alt="Дорога на север">
+      </div>
+      <blockquote class="page-main-photo__desc">
+        <p class="page-main-photo__desc-title">Дорога на север</p>
+        <cite class="page-main-photo__desc-autor">Авор фото: Петр</cite>
+        <p class="page-main-photo__desc-rate">96</p>
+      </blockquote>
+    </article>
+
+    <article class="page-main-photo">
+      <div class="page-main-photo__image">
+        <img src="http://placehold.it/350x150" width="350" height="150" alt="Мост дьявола">
+      </div>
+      <blockquote class="page-main-photo__desc">
+        <p class="page-main-photo__desc-title">Мост дьявола</p>
+        <cite class="page-main-photo__desc-autor">Авор фото: Антон</cite>
+        <p class="page-main-photo__desc-rate">254</p>
+      </blockquote>
+    </article>
+  </section>
+
+  <section class="page-main-video">
+    <h2 class="page-main-video__title">Все еще сомневаетесь?</h2>
+    <p class="page-main-video__desc">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+    <img src="http://placehold.it/350x150" width="350" height="150" alt="">
+    <div class="page-main-video__controls">
+    <video controls></video>
+    <button class="page-main-video__controls-repeat"></button>
+    <button class="page-main-video__controls-subtitle"></button>
+    <button class="page-main-video__controls-fullscreen"></button>
+    </div>
+  </section>
+</main>
+
+<footer class="page-footer">
+  <h2 class="page-footer-title">#Visitsedona</h2>
+  <div class="page-footer-social">
+    <a class="social-btn social-btn--twitter" href="#">Twitter</a>
+    <a class="social-btn social-btn--facebook" href="#">Facebook</a>
+    <a class="social-btn social-btn--youtube" href="#">Youtube</a>
+  </div>
+  <div class="page-footer__copyright">
+    <p class="page-footer__copyright-title">Разработано</p>
+    <img src="http://placehold.it/140x100" width="140" height="100" alt="Логотип Академии">
+  </div>
+</footer>
+</body>
 </html>
