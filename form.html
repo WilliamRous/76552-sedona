@@ -20,54 +20,79 @@
     <button class="page-header__toggle" type="button">Открыть меню</button>
   </header>
 <main class="page-main">
-<section class="page-info">
-  <img src="http://placehold.it/350x150" width="350" height="150" alt="Добро пожаловать в Седону">
-  <h1 class="page-info__title">Оставьте свой отзыв</h1>
-  <p class="page-info__desc">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностями</p>
-</section>
-<form class="form" action="https://echo.htmlacademy.ru/" method="get">
-  <fieldset class="form__username">
-    <legend class="form__legend">Представьтесь:</legend>
-    <label for="name" class="form__text-label">Имя<sup>*</sup></label>
-    <input type="text" id="name" name="name" class="form__text-area" placeholder="" required>
-    <label for="surname" class="form__text-label">Фамилия<sup>*</sup></label>
-    <input type="text" id="surname" name="surname" class="form__text-area" placeholder="" required>
-    <label for="patronymic" class="form__text-label">Отчество<sup>*</sup></label>
-    <input type="text" id="patronymic" name="patronymic" class="form__text-area" placeholder="" required>
-  </fieldset>
-  <fieldset class="form__contacts">
-    <legend class="form__legend">Контактная информация:</legend>
-    <label for="tel" class="form__contacts-label">Контактный телефон<sup>*</sup></label>
-    <input type="tel" class="form__contacts-area" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" id="tel" required>
-    <label for="email" class="form__contacts-label">Электронная почта<sup>*</sup></label>
-    <input type="email" class="form__contacts-area" name="email" id="email" required>
-  </fieldset>
-  <fieldset class="form__radio">
-    <legend class="form__legend">Ваше общее впечатление:</legend>
-    <input type="radio" class="form__radio-area" name="radio" id="positive" checked>
-    <labeL for="positive" class="form__radio-label">Скорее положительное</label>
-    <input type="radio" class="form__radio-area" name="radio" id="negative">
-    <labeL for="negative" class="form__radio-label">Скорее отрицательное</label>
-    <input type="radio" class="form__radio-area" name="radio" id="noanswer">
-    <labeL for="noanswer" class="form__radio-label">Затрудняюсь ответить</label>
-  </fieldset>
-  <fieldset class="form__checkbox">
-    <legend class="form__legend">Посещенные достопримечательности:</legend>
-    <input type="checkbox" class="form__checkbox-area" id="bridge" checked>
-    <label for="bridge" class="form__checkbox-label">Мост дьявола</label>
-    <input type="checkbox" class="form__checkbox-area" id="park" checked>
-    <label for="park" class="form__checkbox-label">Слайд-парк</label>
-    <input type="checkbox" class="form__checkbox-area" id="bell" checked>
-    <label for="bell" class="form__checkbox-label">Гора-колокол</label>
-    <input type="checkbox" class="form__checkbox-area" id="rocks" checked>
-    <label for="rocks" class="form__checkbox-label">Красные скалы</label>
-  </fieldset>
-  <fieldset class="form__textarea">
-    <label for="emotions" class="form__textarea-label">Опишите свои эмоции</label>
-    <textarea id="emotions" class="form__textarea-area" placeholder="Опишите подробно все свои восторги"></textarea>
-  </fieldset>
-  <button type="submit" class="form-btn btn">Отправить отзыв</button>
-</form>
+  <section class="page-info">
+    <img src="http://placehold.it/350x150" width="350" height="150" alt="Добро пожаловать в Седону">
+    <h1 class="page-info__title">Оставьте свой отзыв</h1>
+    <p class="page-info__desc">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностями</p>
+  </section>
+  <form class="form" action="https://echo.htmlacademy.ru/" method="get">
+    <fieldset class="form__block">
+      <legend class="form__title">Представьтесь:</legend>
+      <div class="form__area">
+        <label for="name" class="form__label">Имя<sup>*</sup></label>
+        <input type="text" id="name" name="name" class="form__input" placeholder="Петр" required>
+      </div>
+      <div class="form__area">
+        <label for="surname" class="form__label">Фамилия<sup>*</sup></label>
+        <input type="text" id="surname" name="surname" class="form__input" placeholder="Иванов" required>
+      </div>
+      <div class="form__area">
+        <label for="patronymic" class="form__label">Отчество<sup>*</sup></label>
+        <input type="text" id="patronymic" name="patronymic" class="form__input" placeholder="Александрович" required>
+      </div>
+    </fieldset>
+    <fieldset class="form__block">
+      <legend class="form__title">Контактная информация:</legend>
+      <div class="form__area">
+        <label for="tel" class="form__label form-label--tel">Контактный телефон<sup>*</sup></label>
+        <input type="tel" name="tel" class="form__input form__input--tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" id="tel" placeholder="Введите телефон" required>
+        <span class="form__error">Ошибка, перепроверьте номер</span>
+      </div>
+      <div class="form__area">
+        <label for="email" class="form__label form__label--email">Электронная почта<sup>*</sup></label>
+        <input type="email" class="form__input form__input--email" name="email" id="email" placeholder="Введите e-mail" required>
+      </div>
+    </fieldset>
+    <fieldset class="form__block">
+      <legend class="form__title">Ваше общее впечатление:</legend>
+      <div>
+        <input type="radio" class="form__input radio-input" name="radio" id="positive" checked>
+        <labeL for="positive" class="form__label radio-label">Скорее положительное</label>
+      </div>
+      <div>
+        <input type="radio" class="form__input radio-input" name="radio" id="negative">
+        <labeL for="negative" class="form__label radio-label">Скорее отрицательное</label>
+      </div>
+      <div>
+        <input type="radio" class="form__input radio-input" name="radio" id="noanswer">
+        <labeL for="noanswer" class="form__label radio-label">Затрудняюсь ответить</label>
+      </div>
+    </fieldset>
+    <fieldset class="form__block">
+      <legend class="form__title">Посещенные достопримечательности:</legend>
+      <div>
+        <input type="checkbox" class="form__input checkbox-input" id="item-1" checked>
+        <label for="item-1" class="form__label checkbox-label">Мост дьявола</label>
+      </div>
+      <div>
+        <input type="checkbox" class="form__input checkbox-input" id="item-2" checked>
+        <label for="item-2" class="form__label checkbox-label">Слайд-парк</label>
+      </div>
+      <div>
+        <input type="checkbox" class="form__input checkbox-input" id="item-3">
+        <label for="item-3" class="form__label checkbox-label">Гора-колокол</label>
+      </div>
+      <div>
+        <input type="checkbox" class="form__input checkbox-input" id="item-4" checked>
+        <label for="item-4" class="form__label checkbox-label">Красные скалы</label>
+      </div>
+    </fieldset>
+    <fieldset class="form__block">
+      <legend class="form__title">Опишите свои эмоции</legend>
+      <textarea id="comment" class="form__comment" placeholder="Опишите подробно все свои восторги"></textarea>
+    </fieldset>
+    <button type="submit" class="form-btn btn">Отправить отзыв</button>
+  </form>
 </main>
 <footer class="page-footer">
   <h2 class="page-footer__title">#Visitsedona</h2>
@@ -81,5 +106,15 @@
     <img src="http://placehold.it/140x100" width="140" height="100" alt="Логотип Академии">
   </div>
 </footer>
+<div class="pop-up pop-up--error">
+  <h2 class="pop-up__title">Что-то пошло не так!</h2>
+  <p class="pop-up__desc">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+  <input type="button" value="Ок" class="pop-up-btn btn"></button>
+</div>
+<div class="pop-up pop-up--success">
+  <h2 class="pop-up__title">Ваш отзыв отправлен!</h2>
+  <p class="pop-up__desc">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+  <input type="button" value="Закрыть окно" class="pop-up-btn btn"></button>
+</div>
 </body>
 </html>
