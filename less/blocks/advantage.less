@@ -1,0 +1,52 @@
+.advantage {
+  padding: 0;
+  margin: 0;
+
+  &--close {
+    background: @base-grey;
+    padding: 30px;
+    position: relative;
+  }
+
+  &__title {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+
+  &__number {
+    margin: 5px 0;
+  }
+
+  &__desc {
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+  &__block {
+  padding: 40px 20px;
+  background: @blue;
+  color: @white;
+
+    &--triangle {
+      padding-top: 77px;
+      background: @blue url("../img/bg-triangle.svg") no-repeat center top;
+    }
+  }
+
+  &__photo {
+      min-height: 260px;
+
+    &--1 {
+      background: url("../img/photo-city@1x.jpg") no-repeat 50% 40%;
+      background-size: 520px;
+    }
+
+    &--2 {
+      background: url("../img/photo-city@1x.jpg") no-repeat 50% 40%;
+      background-size: 520px;
+    }
+  }
+}

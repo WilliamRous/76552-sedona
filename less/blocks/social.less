@@ -1,0 +1,36 @@
+.social {
+  padding: 20px;
+  text-align: center;
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+  }
+
+  &__item {
+    display: inline-block;
+    vertical-align: top;
+    width: 46px;
+    background: @blue;
+    margin-right: 6px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.social__item-link {
+  display: block;
+  height: 48px;
+  background: url("../img/icon-twitter.svg") no-repeat center;
+
+  &--fb{
+    background-image: url("../img/icon-facebook.svg");
+  }
+
+  &--yt{
+    background-image: url("../img/icon-youtube.svg");
+  }
+}
