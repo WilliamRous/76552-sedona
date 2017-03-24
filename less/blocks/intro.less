@@ -4,3 +4,15 @@
   background: url("../img/bg-intro-triangle-mobile.svg") no-repeat center bottom,
   url("../img/bg-back-mobile@1x.jpg") no-repeat center bottom;
 }
+
+@media (min-width: @tablet) {
+  .intro {
+    background-position: center bottom, center top;
+    background-size: auto, cover;
+    padding: 70px 20px;
+
+    img{
+      width: 460px;
+    }
+  }
+}

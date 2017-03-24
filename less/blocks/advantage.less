@@ -37,16 +37,49 @@
   }
 
   &__photo {
-      min-height: 260px;
+    img {
+      vertical-align: middle;
+    }
+  }
+}
 
-    &--1 {
-      background: url("../img/photo-city@1x.jpg") no-repeat 50% 40%;
-      background-size: 520px;
+@media (min-width: @tablet) {
+  .advantage {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    &--close {
+      width: 33%;
+      flex-direction: column;
+      flex-grow: 1;
     }
 
-    &--2 {
-      background: url("../img/photo-city@1x.jpg") no-repeat 50% 40%;
-      background-size: 520px;
+    &__block {
+      width: 33%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      &--triangle {
+        padding-top: 40px;
+        .blue-bg()
+      }
+
+      &--revert {
+        order: 1;
+    }
+  }
+
+    &__photo {
+      flex-grow: 1;
+
+      img {
+        width: 100%;
+        height: 100%;
+        max-height: 260px;
+      }
     }
   }
 }

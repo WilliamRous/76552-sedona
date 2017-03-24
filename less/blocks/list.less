@@ -43,3 +43,28 @@
   margin: 0;
   text-transform: uppercase;
 }
+
+@media (min-width: @tablet) {
+  .list {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .list__item {
+    width: 33%;
+    flex-grow: 1;
+    padding: 20px;
+    text-align: center;
+
+    &::before {
+      position: relative;
+      margin: 0 auto;
+      width: 80px;
+      height: 80px;
+      background-size: 80% auto;
+      background-position: center bottom;
+      margin-bottom: 30px;
+    }
+  }
+}
